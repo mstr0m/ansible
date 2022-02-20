@@ -9,6 +9,7 @@ db
 
 [db]
 52.23.211.89
+3.83.14.55
 
 [all:vars]
 ansible_become=yes
