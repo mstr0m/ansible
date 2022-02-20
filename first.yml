@@ -1,0 +1,18 @@
+---
+-
+  hosts: web
+  name: 'install and start httpd'
+  tasks:
+   -
+     name: 'install httpd'
+     yum:
+       name: httpd
+       state: latest
+       update_cache: true
+   -
+     name: 'start httpd service'
+     service:
+       enabled: true
+       name: httpd
+       state: started
+
