@@ -7,7 +7,7 @@
      name: 'install httpd'
      yum:
        name: httpd
-       state: latest
+       state: installed
        update_cache: true
    -
      name: 'start httpd service'
