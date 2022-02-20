@@ -1,6 +1,7 @@
 ---
-- hosts: web
-  name: install and start httpd
+- name: install and start httpd
+  hosts: web
+  gather_facts: no
   tasks:
     - name: install httpd
       yum:
