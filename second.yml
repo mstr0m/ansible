@@ -8,7 +8,6 @@
         name: '{{ item }}'
         state: present
       with_items:
-        - pydf
         - htop
         - telnet
         - net-tools
