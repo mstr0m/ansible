@@ -1,13 +1,14 @@
 ---
 - name: install list of software
-  hosts: web
+  hosts: all
+  gather_facts: no
   tasks:
     - name: install list
       yum:
         name: '{{ item }}'
         state: present
       with_items:
-        - httpd
+        - pydf
         - htop
         - telnet
         - net-tools
