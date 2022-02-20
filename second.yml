@@ -2,12 +2,14 @@
 - name: install list of software
   hosts: all
   gather_facts: no
+  vars:
+    packages:
+      - htop
+      - telnet
+      - net-tools
   tasks:
     - name: install list
       yum:
         name: '{{ item }}'
         state: present
-      with_items:
-        - htop
-        - telnet
-        - net-tools
+      with_items: '{{ packages }}'
