@@ -2,12 +2,12 @@
 - name: install list of software
   hosts: web
   tasks:
-  - name: install list
-    yum:
-      name: {{item}}
-      state: present
-      with_items:
-      - httpd
-      - htop
-      - telnet
-      - net-tools
+    - name: install list
+      yum:
+        name: {{item}}
+        state: present
+        with_items:
+          - httpd
+          - htop
+          - telnet
+          - net-tools
