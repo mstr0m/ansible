@@ -9,3 +9,6 @@ db
 
 [db]
 52.23.211.89
+
+[all:vars]
+ansible_become=yes
