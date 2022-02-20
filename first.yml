@@ -1,13 +1,13 @@
 ---
 - hosts: web
-  name: 'install and start httpd'
+  name: install and start httpd
   tasks:
-    - name: 'install httpd'
+    - name: install httpd
       yum:
         name: httpd
         state: installed
         update_cache: true
-    - name: 'start httpd service'
+    - name: start httpd service
       service:
        enabled: true
        name: httpd
