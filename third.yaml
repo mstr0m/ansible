@@ -1,0 +1,10 @@
+---
+- name: get public IP
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: run curl
+      command: curl http://2ip.io
+      register: publicIP
+    - debug:
+        var: publicIP.stdout

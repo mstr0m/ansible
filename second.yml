@@ -9,6 +9,7 @@
       - telnet
       - net-tools
       - neofetch
+      - tree
   tasks:
     - name: install list
       apt:
