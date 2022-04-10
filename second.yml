@@ -1,6 +1,7 @@
 ---
 - name: install list of software
   hosts: all
+  become: yes
   gather_facts: no
   vars:
     packages:
@@ -9,7 +10,7 @@
       - net-tools
   tasks:
     - name: install list
-      yum:
+      apt:
         name: '{{ item }}'
         state: present
       with_items: '{{ packages }}'
