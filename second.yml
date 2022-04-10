@@ -8,9 +8,11 @@
       - htop
       - telnet
       - net-tools
+      - neofetch
   tasks:
     - name: install list
       apt:
         name: '{{ item }}'
         state: present
+        update_cache: yes
       with_items: '{{ packages }}'
