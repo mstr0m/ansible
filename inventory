@@ -1,16 +1,14 @@
 [all:children]
-web
-db
+master
+worker
 
-[web]
-3.95.28.208
-3.87.44.232
-3.83.138.76
+[worker]
+172.31.43.82
+172.31.37.219
 
-[db]
-52.23.211.89
-3.83.14.55
+[master]
+localhost
 
 [all:vars]
 ansible_become=yes
-ansible_ssh_private_key_file = ./aws.pem
+#ansible_ssh_private_key_file = ./aws.pem
