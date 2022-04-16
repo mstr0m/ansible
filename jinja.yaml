@@ -2,10 +2,10 @@
 - hosts: master
   tasks:
     - name: Install Jinja
-    apt:
-      name: python-jinja2
-      state: present
-      update_cache: yes
+      apt:
+        name: python-jinja2
+        state: present
+        update_cache: yes
       
     - name: Verify Jinja Installation
       shell: dpkg-query -l | grep python-jinja2
