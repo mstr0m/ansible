@@ -1,5 +1,6 @@
 ---
 - hosts: master
+  become: yes
   tasks:
     - name: Install Jinja
       apt:
