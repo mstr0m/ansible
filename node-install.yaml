@@ -1,6 +1,6 @@
 ---
 - name: install nodejs
-  hosts: workers
+  hosts: worker
   gather_facts: True
   become: true
   tasks:
