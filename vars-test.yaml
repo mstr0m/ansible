@@ -6,3 +6,8 @@
   - name: Ansible Variable Basic Usage
     debug:
       msg: "{{ salutations }}"
+
+  - name: "Sample Message conditional"
+    debug:
+      msg: "Testing OS family conditional: {{ ansible_facts['os_family'] }}"
+    when: ansible_facts['os_family'] == "Debian"
