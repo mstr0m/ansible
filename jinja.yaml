@@ -6,10 +6,7 @@
       name: python-jinja2
       state: present
       update_cache: yes
-    notify:
-      - Verify Jinja Installation
-    
-  handlers:
+      
     - name: Verify Jinja Installation
       shell: dpkg-query -l | grep python-jinja2
       register: jinja_verification
