@@ -1,0 +1,11 @@
+---
+- hosts: master
+  vars:
+    mylist:
+      - one
+      - two
+  tasks:
+    - name: output in loop
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ mylist }}"
