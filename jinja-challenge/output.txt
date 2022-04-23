@@ -1,16 +1,15 @@
 ---
   Colour number 1 is Blue.
-    
-          
-  Currently 0 people call Blue their favourite.
-  And the following are examples of things that are Blue:
-      - Sky
-      - Sea
-    Colour number 2 is Yellow.
-    
-          
-  Currently 0 people call Yellow their favourite.
-  And the following are examples of things that are Yellow:
-      - Egg yolk
-      - Taxi
   
+  Currently 1 people call Blue their favourite.
+  And the following are examples of things that are Blue:
+  - Sky
+  - Sea
+
+  Colour number 2 is Yellow.
+  
+  Currently 1 people call Yellow their favourite.
+  And the following are examples of things that are Yellow:
+  - Egg yolk
+  - Taxi
+
