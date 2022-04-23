@@ -1,0 +1,22 @@
+---
+- name: Check if Apache is working
+  hosts: master
+  become: true
+  vars:
+    webserver_message: "I am running to the finish line."
+  tasks:
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Start apache2
+      service:
+        name: apache2
+        state: started
+
+    - name: Create index.html using Jinja2
+      template:
+        src: index.j2
+        dest: /var/www/html/index.html

@@ -1,0 +1,9 @@
+---
+# tasks file for test
+- name: copy example file
+  template:
+     src: templates/example.j2
+     dest: /etc/example
+     owner: root
+     group: root
+     mode: 0444
