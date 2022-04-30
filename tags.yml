@@ -1,0 +1,23 @@
+---
+- name: Working with tags 
+  hosts: localhost 
+  gather_facts: no 
+  tags:
+    - playtag
+
+  tasks:
+    - name: Task A 
+      debug:
+        msg: "Task A executed"
+      tags:
+        - taska
+        - groupdev
+    - name: Task B
+      debug:
+        msg: "Task B executed"
+      tags:
+        - taskb
+        - groupdev
+    - name: Task C
+      debug:
+        msg: "Task C executed"

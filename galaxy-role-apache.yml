@@ -1,0 +1,7 @@
+---
+- name: Install apache with galaxy role
+  hosts: master
+  become: true
+
+  roles:
+    - role: geerlingguy.apache
